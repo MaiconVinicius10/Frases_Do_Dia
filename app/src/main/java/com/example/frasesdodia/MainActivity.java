@@ -15,22 +15,27 @@ public class MainActivity extends AppCompatActivity {
         "Hello Word!!",
         "Foque nos seus objetivos , desistir é pros fracos.",
         "Nunca é tarde pra fazer aquilo que movimenta seus sonhos.",
+            "Você pode fazer tudo que um dia sonhou.",
+            "Acreditar no amanhã significa viver o hoje pra fazer o correto"
+
     };
     // metodo onCreate
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
-    //criando metodo
+    //criando metodo gera frase
     public void gerarFrase(View view){
     TextView texto = findViewById(R.id.textResultado);
     //instanciar classe random
         int numeroAleatorio = new Random().nextInt(3);
+        // criando string frase
+        String frase = frases[numeroAleatorio];
+        texto.setText(frase);
     }
-
+    // croando metodo exibir
     public void exibirTodas(View view){
 
         TextView texto = findViewById(R.id.textResultado);

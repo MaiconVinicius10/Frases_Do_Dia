@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         "Foque nos seus objetivos , desistir é pros fracos.",
         "Nunca é tarde pra fazer aquilo que movimenta seus sonhos.",
             "Você pode fazer tudo que um dia sonhou.",
-            "Acreditar no amanhã significa viver o hoje pra fazer o correto"
+            "Acreditar no amanhã significa viver o hoje pra fazer o correto",
+            "devmike acessa la"
 
     };
     // metodo onCreate
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void gerarFrase(View view){
     TextView texto = findViewById(R.id.textResultado);
     //instanciar classe random
-        int numeroAleatorio = new Random().nextInt(3);
+        int numeroAleatorio = new Random().nextInt(5);
         // criando string frase
         String frase = frases[numeroAleatorio];
         texto.setText(frase);
